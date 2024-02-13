@@ -21,7 +21,11 @@
                     }
                     
                     function moveButton() {
-                        alert("You can't say no, this will make Jams very sad.");
+                        document.getElementById('noButton').text = "NoNoNo"
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
                     }
                 </script> 
             </div>
